@@ -22,7 +22,6 @@ app.get('/autenticar', async function(req, res){
   })
 
   app.post('/logar', async function(req, res){
-    res.render("logar")
     // var resultado = await usuario.findAll();
     //res.json(resultado);
   })
