@@ -22,10 +22,17 @@ app.get('/autenticar', async function(req, res){
   })
 
   app.post('/logar', async function(req, res){
-    // var resultado = await usuario.findAll();
-    //res.json(resultado);
-  })
-
+    if(req.body.usuario == "adimin" && req.body.password == "123"){
+    res.json("Vc foi logado")
+  }else{
+    res.json("Nome ou senha Inválidos")
+  }
+}
+)
+app.get('/inscrever', async function(req, res){
+  res.render("inscrever")
+}
+)
   app.post('/deslogar', async function(req, res){
     //var resultado = await usuario.findAll();
     //res.json(resultado);

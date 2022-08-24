@@ -5,36 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
-    <title>PTAS</title>
+    <title>Document</title>
 </head>
 <body>
-  
     <div class="container">
         <div class="row">
         <img src="https://pixel.cuboup.com/wp-content/uploads/edd/2022/04/Icone-Formulario-150x150.jpg" 
         width="80" height="80">
         <h1 class="cor">Ola, Seja Bem Vindo</h1>
-        <a href="/inscrever" class="inscrever">Inscrever</a><img src="http://www.agecefrio.com.br/novo-site/app/icones/associese-branco.png"
+        <a href="autenticar" class="inscrever">Autenticar</a><img src="http://www.agecefrio.com.br/novo-site/app/icones/associese-branco.png"
         width="50" height="50" class="image">
     </div>
 </div>
 
     <div class="name">
-   <form action="/logar" method="post">
-    <h2 class="pet2">Formulario de Autenticação</h2>
+   <form action="/inscrever" method="get">
+    <h2 class="pet">Inscreva-se</h2>
+    <label class="top">Usuário</label>
+    <input type="usuario" placeholder="Digite nome de Usuario">
+    <br>
   <label class="top">Email:</label>
-  <input type="text" name="usuario" placeholder="Digite seu Email">
+  <input type="email" placeholder="Digite seu Email">
   <br>
   <label>Senha:</label>
-  <input type="password" name="password" placeholder="Digite sua senha">
+  <input type="password" placeholder="Digite sua senha">
   <br>
-  <button type="submit" class="botão">Autenticar</button>
-  <img src="https://img.icons8.com/color/344/facebook-new.png" class="second-image">
-  <br></br>
-  <a href="/inscrever" class="não-cadastro">Não tenho cadastro :)</a>
+  <label>Senha:</label>
+  <input type="password" placeholder="Confirmar sua senha">
    </form>
+   <button class="botão">Autenticar</button>
+   <img src="https://img.icons8.com/color/344/facebook-new.png" class="second-image">
    <br>
 </div>
-
+</div>
 </body>
 </html>
